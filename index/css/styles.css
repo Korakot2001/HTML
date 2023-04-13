@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteiner{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    border-top: 5px solid red;
+}
+
+.nav-grid{
+    display: grid;
+    grid-template-columns: 225px 1fr;
+}
+
+.logo{
+    margin-top: 30px;
+    color: wheat;
+}
+
+.logo h1{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.logo span{
+    font-size: 23px;
+}
+
+ul.menu{
+    display: grid ;
+    grid-template-columns: repeat(2, 11rem);
+    justify-items: center ;
+    margin-top: 38px;
+    justify-self: flex-end;
+}
+
+ul.menu li{
+    list-style: none;
+}
+
+ul.menu li a {
+    font-size: 28px;
+    text-decoration: none;
+    color: rgb(255, 5, 5);
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+}
+
+ul.menu li a:hover{
+    color: black;
+    background-color: aqua;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/*************************end header**********************************/
+
+.content{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.content-heading{
+    font-size: 120px;
+    color: #333;
+    text-align: center;
+
+}
+
+.content-services{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.content-services-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    grid-gap: 1rem; /*เพิ่มช่องว่างละหวางช่อง grid*/
+}
+
+.content-teams-item img{
+    width: 100%;
+}
+
+.content-services-item{
+    border: 3px solid #e4e4e4; /*เพิ่มเส้นกรอบรอบ div ละใส่สี*/
+    padding: 20px; 
+    transition: .5s ease-in-out;
+    background-color: #ffffff;
+    cursor: pointer; /*เปลี่ยนเมาส์*/
+}
+
+.content-services-item .fa{
+    font-size: 8rem;
+    color: #333;
+}
+
+.content-services-item h2{
+    color: #333;
+    text-transform: uppercase;
+    font-size: 27px;
+}
+
+.content-services-item p{
+    color: #333;
+    font-size: 14px;
+}
+
+/* content services item hover */
+
+.content-services-item:hover{
+    border: 3px solid #00d9ff; /*เพิ่มเส้นกรอบรอบ div ละใส่สี*/
+    padding: 20px;  
+
+    background-color: #00d9ff;
+}
+
+.content-services-item:hover .fa{
+    font-size: 8rem;
+    color: #ffffff;
+}
+
+.content-services-item:hover h2{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 27px;
+}
+
+.content-services-item:hover p{
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/*******************end  content-services-item************************/
+
+.content-meet{
+    font-size: 72px;
+    color: #ababab;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.content-teams{
+    width: 100%;
+    height: auto;
+}
+
+.content-teans-grid{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+
+}
+ 
+.content-teams-item h2{
+    font-size: 23px;
+    color: #333;
+    padding: 15px 0;
+    border-bottom: 1px solid #979797;
+    
+}
+
+.content-teams-item p{
+    font-size: 20px;
+    color: #bdbdbd;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.content-teams-item a{
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #40aed7;
+    font-size: 17px;
+}
+
+.cr{
+    text-align: right;
+}
+/****** end content team item *****/
+
+
+.copyright{
+    width: 100%;
+    height: 60px;
+    background-color: #333
+}
+
+.copyright-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 60px;
+}
+
+.Prototype{
+    justify-self: flex-start;
+    margin-top: 22px;
+    margin-left: 5px;
+    font-size: 20px;
+    color: #ffff;
+
+}
+.credits{
+    justify-self: flex-end;
+    margin-top: 22px;
+    margin-right: 5px;
+    font-size: 20px;
+    color: #ffff;
+}
+/****** end footer ********/
+
+@media only screen and (max-width: 480px){
+
+    header{
+        height: auto;
+    }
+
+    .nav-grid{
+        text-align: center;
+        grid-template-columns: 1fr ;
+    }
+    ul.menu{
+        grid-template-columns: 1fr;
+        justify-self: center;      
+    }
+
+    ul.menu li{
+        height: 2.5rem;
+    }
+
+    .content-heading{
+        font-size: 3.2rem;
+        text-align: center;
+    }
+
+    .content-services-grid{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    
+    .content-meet{
+        font-size: 2.5rem;
+    }
+    
+    .content-teans-grid{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    
+
+    .footer{
+        height: auto;
+    }
+
+    .copyright{
+        height: auto;
+    }
+
+    .copyright-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .Prototype,.credits{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+}
