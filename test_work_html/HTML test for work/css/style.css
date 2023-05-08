@@ -1,80 +1,148 @@
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
-
-.conteiner{
-    max-width: 960px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-
+/* end html */
 header{
-    width: 100%;
     height: 60px;
-    background-color: rgb(180, 179, 179);
-    border-top: 5px solid rgb(2, 2, 2);
+    width: auto;
+    background-color: #dbdbdb
 }
+/* end head */
 
-.nav-grid{
+
+.headbar{
     display: grid;
-    grid-template-columns: 320px 320px 320px;
-}
-
-ul.menu{
-    display: grid ;
-    grid-template-columns: repeat(3, 6rem);
-    justify-items: center ;
-    margin-top: 38px;
+    grid-template-columns: repeat(3,1fr);
+    height: 60px;
+    justify-self: center;
+    justify-items: center;
     
-}
 
-ul.menu li{
-    list-style: none;
 }
-
-ul.menu li a{
-    font-size: 14px;
+/* end headbar */
+.manu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    width: 245px;
+    margin-top: 16px;
+    justify-self: center;
+} 
+.manu a{
     text-decoration: none;
-    color: #505F98;
-    transition: .3s ease-in-out;
+    color: #18181a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-ul.menu li a:hover{
-    color: #192e8a;
-}
+/* ต้องเอาเส้นออกแล้วแต่งเพิ่มอีกหน่อย */
+/* end manu */
 
 .logo{
-    margin-top: 30px;
-    color: #37447E;
-    justify-self: center;
-}
-
-
-.logo h1{
+    justify-items: center;
+    width: 79px;
+    height: 38px;
+    margin-top: 10px;
     font-size: 26px;
-    margin-bottom: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* end logo  */
+
+.buy{
+    margin-top: 15px;
 }
 
-ul.buy{
-    width: 160px;
-    height: 26px;
-    background-color: #111B47;
-    padding: 5px 10px;
-    border-radius: 2px;
-    margin-top: 13px;
-    justify-self:center
+ul {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
 }
-
-ul.buy li{
-    list-style: none;
-    text-align: center;
+  
+li {
+    margin-top: 15px;
+    margin: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+/* end ul-li container */
 
-ul.buy li a{
+.button-cover {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #18181a;
+    color: #18181a;
+    display: inline-block;
     font-size: 12px;
-    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 15px;
+    padding: 5px 39px 5px;
+    border-radius: 3px;
     text-decoration: none;
+    cursor: pointer;
+    background: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+    
+.button-cover span:first-child {
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 10;
+}
+    
+.button-cover span:last-child {
+    color: rgb(0, 0, 0);
+    display: block;
+    position: absolute;
+    padding: 8px 39px 5px;
+    bottom: 0;
+    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 100;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateY(225%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+}
+    
+.button-cover:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(2, 255, 234);
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+    z-index: 50;
+}
+    
+.button-cover:hover:after {
+    transform-origin: bottom center;
+    transform: skewY(9.3deg) scaleY(2);
+}
+    
+.button-cover:hover span:last-child {
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 1;
+    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+/* end buy botton */
+
+body{
+    height: auto;
+    width: 980px;
+    display: block;
+}
+
+.conteat-show{
+    height: auto;
     
 }
