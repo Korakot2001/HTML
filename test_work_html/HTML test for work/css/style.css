@@ -4,11 +4,50 @@
     padding: 0;
     box-sizing: border-box
 }
+
+body{
+    justify-content: center;
+}
+
+.background-img-showcontent{
+    height: 100%;
+    width: auto;
+    background-color: #ffffff;
+}
+
+svg{
+    height: 4rem;
+    width: auto;
+    position: absolute;
+    margin-left: 24.6rem;
+}
+path{
+    /* Path */
+
+position: absolute;
+left: 28.98%;
+right: -32.45%;
+top: -1.06%;
+bottom: 75.97%;
+
+/* Colour/Main/Blue/100 */
+background: #E7ECFF;
+mix-blend-mode: normal;
+opacity: 0.5;
+
+}
+/* img{ */
+    /* height: 46rem; */
+    /* width: auto; */
+    /* position: absolute; */
+    /* margin-left: 24.6rem; */
+/* } */
+
 /* end html */
 header{
     height: 60px;
     width: auto;
-    background-color: #dbdbdb
+    background-color: #ffffff00
 }
 /* end head */
 
@@ -17,6 +56,7 @@ header{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     height: 60px;
+    width: auto;
     justify-self: center;
     justify-items: center;
     
@@ -40,12 +80,16 @@ header{
 /* end manu */
 
 .logo{
+    background-color: #ffffff00;
     justify-items: center;
     width: 79px;
     height: 38px;
     margin-top: 10px;
     font-size: 26px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo p{
+    color: blue;
 }
 /* end logo  */
 
@@ -136,13 +180,36 @@ li {
 }
 /* end buy botton */
 
-body{
-    height: auto;
-    width: 980px;
+/* start content */
+.hero-content{
+    
+    margin-top: 12rem;
+    margin-left: 7rem;
+    justify-items: center;
+    justify-self: center;
     display: block;
+    position: absolute;
+    height:  auto;
+    width: 30rem;
 }
 
-.conteat-show{
-    height: auto;
-    
+
+.text-content h1,p{
+    font-family: 'Roboto', sans-serif;
 }
+.text-content h1{
+    font-size: 43px;
+}
+.botton-leard-Purchase{
+    display: grid;
+    grid-template-columns: repeat(2,8rem);
+    grid-gap: 4.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.style-button{
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    font-size: 15px;
+    width: 170px;
+}
+
