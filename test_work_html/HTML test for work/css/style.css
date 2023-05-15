@@ -227,7 +227,73 @@ header{
     margin-top: 14.7rem;
     margin-left: 11rem;
 }
+/* end ex3 */
 .img4{
     margin-top: 14.7rem;
     margin-left: 11rem;
+}
+/* end ex4 */
+.ing5{
+    position: absolute;
+    justify-items: center;
+    justify-self: center;
+}
+
+.text-pricing{
+    height: 116px;
+    width: 600px;
+    text-align: center;
+    position: absolute;
+    margin-left: 420px;
+    margin-top: 241px;
+}
+
+.text-pricing h1{
+    font-size: 36px;
+}
+
+.text-pricing span{
+    font-size: 16px;
+    color: #6F7CB2;
+}
+
+.text-pricing2{
+    height: 116px;
+    width: 600px;
+    text-align: center;
+    position: absolute;
+    margin-left: 420px;
+    margin-top: 414px;
+}
+
+.text-pricing2 h2{
+    font-size: 50px;
+}
+.text-pricing2 span{
+    font-size: 16px;
+    color: #37447E;
+}
+
+.text-pricing3{
+    height: 116px;
+    width: 600px;
+    text-align: center;
+    position: absolute;
+    margin-left: 420px;
+    margin-top: 566px;
+}
+
+.text-pricing3 span{
+    font-size: 14px;
+    color: #5D6970;
+}
+.text-pricing3 button{
+
+    background-color: #111B47;
+    color: #ffff;
+    width: 12rem;
+    height: 30px;
+    border-radius: 6px;
+    margin-top: 20px;
+
 }
