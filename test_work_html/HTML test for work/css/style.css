@@ -297,3 +297,74 @@ header{
     margin-top: 20px;
 
 }
+/* end  */
+.footer{
+    position: absolute;
+    margin-top: 806px;
+}
+.img6{
+    position: absolute;
+    width: 100%;
+    height: 216px;
+}
+.footer-logo{
+    position: absolute;
+    margin-top: 62px;
+    margin-left: 679px;
+    color: #37447E;
+}
+.content-footer{
+    position: absolute;
+    height: 216px;
+}
+.footer-line {
+    
+    border: none;
+    border-top: 1px solid #CDD1D4;
+    margin-top: 39px;
+    margin-left: 162px;;
+    width: 1110px;
+  }
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 1110px;
+    margin-top: 69px;
+    margin-left: 162px;
+}
+.grid1 button{
+    justify-self: end;
+    height: 26px;
+    width: 109px;
+    background: #111B47;
+    color: #FFFFFF;
+    border-radius: 6px;
+
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 1110px;
+    margin-top: 20px;
+    margin-left: 162px;
+}
+
+.grid2 .manu2{
+    display: grid;
+    grid-template-columns: repeat(3,2.5rem);
+    grid-gap: 60px;
+}
+.grid2 .manu2 a{
+    font-size: 14px;
+    color: #929ecc;
+    text-decoration: none;
+}
+.grid2 .Social{
+    justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(5,1rem);
+    justify-items: center;
+    grid-gap: 30px;
+    color: #B0B8BC;
+}
