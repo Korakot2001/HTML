@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
+:root {
+  --dur: all 550ms ease-in-out; 
+  --dur-a: all 650ms ease-in-out;
+  --dur-b: all 750ms ease-in-out;
+}
+body {
+  padding:0;
+  margin:0;
+  height:100vh;
+  display:grid;
+  align-items:center;
+  font-family:'Ubuntu';
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8e01e8+0,1101e8+100 */
+background: #8e01e8; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #8e01e8 0%, #1101e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #8e01e8 0%,#1101e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #8e01e8 0%,#1101e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e01e8', endColorstr='#1101e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+.container {
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-gap:20px;
+  padding:20px;
+  box-sizing:border-box;
+}
+.item {
+  background:#0234FF;
+  height:400px;
+  position:relative;
+  border-radius:15px;
+  padding:30px;
+  box-sizing:border-box;
+  color:#fff;
+}
+.card {
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin:auto;
+  z-index:10;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  border-radius:15px;
+  -webkit-transition: var(--dur);
+  -moz-transition: var(--dur);
+  -ms-transition: var(--dur);
+  -o-transition: var(--dur);
+  transition: var(--dur);
+  clip-path: circle(100.0% at 50% 50%);
+}
+.card img {
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin:auto;
+  z-index:10;
+  height:100%;
+  width:auto;
+  max-width:9999px;
+  overflow:hidden;
+  border-radius:15px;
+  -webkit-transition: var(--dur);
+  -moz-transition: var(--dur);
+  -ms-transition: var(--dur);
+  -o-transition: var(--dur);
+  transition: var(--dur);
+  clip-path: circle(100.0% at 50% 50%);
+}
+.item:hover .card  img{
+  clip-path: circle(0.0% at 50% 50%);
+}
+.circle {
+  background:#1101E8;
+  max-width:100%;
+  height:100%;
+  position:absolute;
+  z-index:2;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin:auto;
+  -webkit-transition: var(--dur-a);
+  -moz-transition: var(--dur-a);
+  -ms-transition: var(--dur-a);
+  -o-transition: var(--dur-a);
+  transition: var(--dur-a);
+  clip-path: circle(100.0% at 50% 50%);
+}
+.circle2 {
+  background:#8E01E8;
+  -webkit-transition: var(--dur-b);
+  -moz-transition: var(--dur-b);
+  -ms-transition: var(--dur-b);
+  -o-transition: var(--dur-b);
+  transition: var(--dur-b);
+  clip-path: circle(100.0% at 50% 50%);
+}
+.item:hover .card  img {
+  clip-path: circle(0.0% at 50% 50%);
+}
+.item:hover .card  .circle {
+  clip-path: circle(0.0% at 75% 60%);
+}
+.item:hover .card  .circle2 {
+  clip-path: circle(0.0% at 35% 20%);
+}
+img {
+  max-width:100%;
+  position:absolute;
+  z-index:3;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  margin:auto;
+}
+.content {
+  position:relative;
+  z-index:0;
+  display:flex;
+  align-items:center;
+  height:100%;
+}
