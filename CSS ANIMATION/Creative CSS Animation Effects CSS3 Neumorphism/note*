@@ -1,0 +1,3 @@
+ต้องลง nodjs ก่อน
+เปิด terminal ของ VScode 
+พิมคำสั่ง npm install -g sass
